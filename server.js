@@ -15,6 +15,8 @@ app.use('/static', express.static(__dirname + '/static'));
 app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, 'index.html'));
 });
+app.use('/js', express.static(__dirname + '/static/js'));
+
 
 // Starts the server.
 server.listen(5000, function() {
