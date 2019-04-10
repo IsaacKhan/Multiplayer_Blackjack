@@ -1,17 +1,51 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>A Multiplayer Game</title>
-    <style>
-      canvas {
-        width: 800px;
-        height: 600px;
-        border: 5px solid black;
-      }
-    </style>
-    <script src="/socket.io/socket.io.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
-    <canvas id="canvas"></canvas>
+
+    <div id="root"></div>
+
+    <div class="Game">
+      <h1>Blackjack</h1>
+      <button id="start">Start Game</button>
+      <button id="deal">Deal</button>
+      <button id="hitMe">Hit Me</button>
+      <button id="stay">Stay</button>
+      <button id="log">debug butt</button>
+
+      <div id="deck" class="deck">
+        <h2>Deck Info</h2>
+        <h3>Number of Cards in Deck: </h3>
+        <div id="deckcount"></div>
+        <h3>Is the Deck Shuffled?: </h3>
+        <div id="status"></div>
+      </div>
+
+      <div id="house" style = "display: none">
+        <h2>House Hand</h2>
+        <p id = "houseScore">score goes here</p>
+        <img id="HouseC1" src = "" style = "width: 150px;">
+        <img id="HouseC2" src = "" style = "width: 150px;">
+        <img id="HouseC3" src = "" style = "width: 150px;">
+        <img id="HouseC4" src = "" style = "width: 150px;">
+      </div>
+
+      <div id="player" style="display: none">
+        <h2>Player Hand</h2>
+        <p id = "playerScore">score goes here</p>
+        <img id="PlayerC1" src = "" style = "width: 150px;">
+        <img id="PlayerC2" src = "" style = "width: 150px;"> 
+        <img id="PlayerC3" src = "" style = "width: 150px;">
+        <img id="PlayerC4" src = "" style = "width: 150px;">
+      </div>
+    </div>
+
+    <script src = "/js/player.js"></script>
+    <script src = "/js/scripts.js"></script>
+
   </body>
-  <script src="/static/game.js"></script>
 </html>
