@@ -1,3 +1,5 @@
+var Player = require('./player');
+
 // Notes //
 // Things to work on:
 //  - Fine tuning House "AI".
