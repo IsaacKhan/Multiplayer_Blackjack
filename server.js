@@ -26,5 +26,12 @@ server.listen(3000, function() {
 
 // Add the WebSocket handlers
 io.on('connection', function(socket){
-
+  console.log("client connected");
+  
+  //when a new client connects
+	io.clients(function(error, clients){
+	  if (error) throw error;
+		  //send the list of clients out to all the clients
+		  io.emit('clientList', clients);
+	});
 });
