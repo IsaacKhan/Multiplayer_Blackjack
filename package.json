@@ -4,9 +4,10 @@
   "description": "Web application; Play Blackjack online with friends!",
   "main": "game.js",
   "scripts": {
-    "build": "browserify game.js -o bundle.js",
+    "build": "browserify /static/game.js -o /static/bundle.js",
+    "buildScripts": "browserify dealer.js player.js scripts.js table.js > scriptsBundle.js",
     "watch": "watchify game.js -o bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watchScripts": "watchify dealer.js player.js scripts.js table.js > scriptsBundle.js"
   },
   "repository": {
     "type": "git",
