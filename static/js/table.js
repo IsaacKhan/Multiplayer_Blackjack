@@ -15,8 +15,8 @@ module.exports = function Table() {
     var playerTurnTimeoutID;
     var discardedCards = [];
     var id = id;
-    var chips = chips;
-    var cards = cards;
+    var chips;
+    var cards;
     var gamePhase;
 
     this.addPlayer = function(player) {

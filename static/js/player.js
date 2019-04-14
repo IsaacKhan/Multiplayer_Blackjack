@@ -8,9 +8,9 @@ module.exports = function Player(name, socket){
     this.socket = socket;
     this.showControls = false;
     this.turn = false;
-    this.currentHand = hand;
-    this.currentScore = score;
-    this.currentAceScore = aceScore;
+    this.currentHand;
+    this.currentScore;
+    this.currentAceScore;
     this.aceFound = false;
     this.blackjack = false;
     this.bust = false;
