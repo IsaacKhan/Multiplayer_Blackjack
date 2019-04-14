@@ -1,7 +1,7 @@
 var socket = io();
 
-socket.on('message', function(data) {
-  console.log(data);
+socket.on('connect', function() {
+  document.getElementById("ClientID").innerHTML = "This client's ID is " + socket.id;
 });
 
 socket.on('start', function() {
