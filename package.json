@@ -23,7 +23,6 @@
     "browserify": "^16.2.3",
     "express": "^4.16.4",
     "module": "^1.2.5",
-    "requirejs": "^2.3.6",
     "socket.io": "^2.2.0",
     "watchify": "^3.11.1"
   }
